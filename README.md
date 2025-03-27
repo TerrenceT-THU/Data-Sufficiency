@@ -16,7 +16,7 @@
 The entire experiment consists of three steps:
 - Design and train the Long Short-Term Memory (LSTM) model in source domain.
 - Use limited data in target domain to fine-tune the pre-trained model.
-First we
+- Vary the amount of data available in the target domain and observe its impact on prediction accuracy.
 ## 3.1 Source domain data processing
 We apply LSTM networks to predict battery capacity based on historical feature data. The dataset consists of voltage response and other degradation-related features extracted from battery cycling tests. The goal is to preprocess the data, convert it into a supervised learning format, and train an LSTM model for accurate capacity prediction.
 
@@ -231,7 +231,7 @@ plt.show()
 ```
 - Note: The train_samles are changed in the range of [20,200], and the interval is 20. The prediction accuracy in each case is recorded 1-mape. The observation found that the use of early data can achieve higher accuracy, and continue to increase the data does not cause a significant increase in accuracy, thus the optimal amount of data is called ODS.
 # 4. Experiment-Theoretical data sufficiency(TDS)
-We propose the predictive capability(PC) and tranferable capability(TC) as data sufficiency components, in order to measure the ability of features to reflect battery aging trends and transfer under different conditions. PC is the correlation between features and capacity, and TC is the 1-Wasserstein distance between source-domain features and target-domain features. PC and TC have a certain trend of change with cycles. The combination of PC and TC maintains a high value in the early stage of battery life, and then decreases later. Therefore, the combination of PC and TC is defined as TDS, and the period corresponding to the maximum value is the same as the period corresponding to the optimal value of ODS. 
+We propose predictive capability (PC) and transferable capability (TC) as key components of data sufficiency to evaluate the ability of features to capture battery aging trends and transfer across different conditions. PC measures the correlation between features and capacity, while TC is defined as the 1-Wasserstein distance between source-domain and target-domain features. Both PC and TC exhibit characteristic trends over the battery’s lifecycle, initially maintaining high values in the early stages before declining over time. Accordingly, we define their combination as TDS, whose peak occurs at the same period as the optimal value of ODS.
 
 Calculate the correlation between features and capacity on the T25 target domain, defined as PC, and draw the evolution trend of PC with the cycles：
 ```python
