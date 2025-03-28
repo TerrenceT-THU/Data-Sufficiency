@@ -1,0 +1,4 @@
+- MIT.py: The primary script used for analysis.
+- MIT_ACC.xlsx: Contains prediction accuracy under different data volumes, used to define ODS.
+- MIT.xlsx: Contains PC and TC values under different data volumes, used to define TDS.
+- Filtered_Features_MIT_x.xlsx: Filtered feature set, where x corresponds to the battery ID.
