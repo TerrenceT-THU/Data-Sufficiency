@@ -1,0 +1,4 @@
+- XJTU.py: The primary script used for analysis.
+- XJTU_ACC.xlsx: Contains prediction accuracy under different data volumes, used to define ODS.
+- XJTU.xlsx: Contains PC and TC values under different data volumes, used to define TDS.
+- Battery_Features_bx.xlsx: Filtered feature set, where x corresponds to the batch number of the battery.
