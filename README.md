@@ -1,0 +1,4 @@
+- HUST.py: The primary script used for analysis.
+- HUST_ACC.xlsx: Contains prediction accuracy under different data volumes, used to define ODS.
+- HUST.xlsx: Contains PC and TC values under different data volumes, used to define TDS.
+- Features_HUST_x_filtered.xlsx: Filtered feature set, where x corresponds to the battery ID in the original dataset.
