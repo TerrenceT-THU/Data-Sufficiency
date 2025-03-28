@@ -233,7 +233,7 @@ plt.show()
 # 4. Experiment-Theoretical data sufficiency(TDS)
 We propose predictive capability (PC) and transferable capability (TC) as key components of data sufficiency to evaluate the ability of features to capture battery aging trends and transfer across different conditions. PC measures the correlation between features and capacity, while TC is defined as the 1-Wasserstein distance between source-domain and target-domain features. Both PC and TC exhibit characteristic trends over the battery’s lifecycle, initially maintaining high values in the early stages before declining over time. Accordingly, we define their combination as TDS, whose peak occurs at the same period as the optimal value of ODS.
 
-Calculate the correlation between features and capacity on the T25 target domain, defined as PC, and draw the evolution trend of PC with the cycles：
+Calculate the correlation between features and capacity on the 25°C target domain, defined as PC, and draw the evolution trend of PC with the cycles：
 ```python
 import numpy as np
 import numpy as np
@@ -302,7 +302,7 @@ plt.ylabel('Average Absolute Correlation')
 plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.show()
 ```
-Calculate the 1-Wasserstein distance of features between two domains on T25 target domain and the T55 source domain, define it as TC, and plot the trend of TC with the cycles：
+Calculate the 1-Wasserstein distance of features between two domains on 25°C target domain and the 55°C source domain, define it as TC, and plot the trend of TC with the cycles：
 ```python
 from itertools import combinations
 import numpy as np
@@ -402,7 +402,7 @@ plt.show()
 # plt.grid(True)
 # plt.show()
 ```
-TDS is a combination of PC and TC, which is defined as normalized PC,TC and their variations. Later we need to find its maximum value：
+PC and TC are the components of TDS. We calculate the normalized PC and TC, along with their variations. Then, we determine the cycle at which their combination reaches its maximum value, defining it as TDS：
 ```python
 # Calculate the average of TC and PC
 tc_avg = tc_data.mean(axis=1)  
