@@ -1,0 +1,4 @@
+- NASA.py: The primary script used for analysis.
+- NASA_ACC.xlsx: Contains prediction accuracy under different data volumes, used to define ODS.
+- NASA.xlsx: Contains PC and TC values under different data volumes, used to define TDS.
+- Features_x.xlsx: Extracted feature set, where x corresponds to the battery ID.
