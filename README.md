@@ -1,0 +1,4 @@
+- CALCE.py: The primary script used for analysis.
+- CALCE_ACC.xlsx: Contains prediction accuracy under different data volumes, used to define ODS.
+- CALCE_CS.xlsx: Contains PC and TC values under different data volumes, used to define TDS.
+- Features_lb_CS2-33-x.xlsx: Filtered feature set, where x represents the charging rate (e.g., 0_5 for 0.5C and 1 for 1C).
