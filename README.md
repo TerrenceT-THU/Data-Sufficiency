@@ -1,0 +1,4 @@
+- Tongji.py: The primary script used for analysis.
+- Tongji_ACC.xlsx: Contains prediction accuracy under different data volumes, used to define ODS.
+- Tongji.xlsx: Contains PC and TC values under different data volumes, used to define TDS.
+- Features_lb_Tongji-CYx-05x.xlsx: Filtered feature set, where x represents the battery temperature.
