@@ -15,7 +15,11 @@
 Data sufficiency (DS) refers to the minimum amount of data required to achieve a high prediction accuracy, where further data collection does not lead to a significant improvement in accuracy or reduction in prediction error.
 ## 3.1 Observable data sufficiency(ODS)
 ODS represents the cycle at which the prediction accuracy reaches its peak without further improvement. It identifies the point at which additional data no longer significantly enhances the model’s predictive performance, ensuring efficient use of available data while minimizing redundancy.
-<p align="center"> \( Acc = 1 - MAPE \)  </p> (9)
+$`\Acc = 1 - MAPE`$
+$$ Acc = 1 - MAPE $$
+To identify the contribution of each additional data interval, the change in accuracy, \( \Delta Acc(j) \), between successive intervals is calculated as:
+<p align="center"> \( \Delta Acc(j) = Acc(j) - Acc(j-1) \)  
+
 ## 3.2 Theoretical data sufficiency (TDS)
 We quantify the features' ability to predict capacity accurately and maintain performance under varying operating conditions in transfer learning scenarios. Thus, the prediction capability(PC) and transferable capability(TC) are defined. The combination of 𝑃𝐶 and 𝑇𝐶 forms the foundation for defining 𝑇𝐷𝑆. 
 # 3. Experiment-Observable data sufficiency(ODS)
