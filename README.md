@@ -19,7 +19,8 @@ $`\Acc = 1 - MAPE`$
 $$ Acc = 1 - MAPE $$
 To identify the contribution of each additional data interval, the change in accuracy, \( \Delta Acc(j) \), between successive intervals is calculated as:
 <p align="center"> \( \Delta Acc(j) = Acc(j) - Acc(j-1) \)  
-
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+ 
 ## 3.2 Theoretical data sufficiency (TDS)
 We quantify the features' ability to predict capacity accurately and maintain performance under varying operating conditions in transfer learning scenarios. Thus, the prediction capability(PC) and transferable capability(TC) are defined. The combination of 𝑃𝐶 and 𝑇𝐶 forms the foundation for defining 𝑇𝐷𝑆. 
 # 3. Experiment-Observable data sufficiency(ODS)
